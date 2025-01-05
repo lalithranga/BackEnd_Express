@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 
             if (!err) {
                 req.user = decoded;  // Attach decoded token to request object
-                next();
+                
        
             }
         });  // Remove 'Bearer ' prefix
